@@ -1,0 +1,144 @@
+@import url(./reset.css);
+@import url(./cabecalho.css);
+@import url(./home.css);
+@import url(./Sobre.css);
+@import url(./projetos.css);
+@import url(./contato.css);
+@import url(./rodape.css);
+@import url(./parallax.css);
+@import url(../js/contato.js);
+@import url(../js/projeto.js);
+@import url(./inicio.css);
+@import url(../style.css/);
+
+
+:root {
+  --fundo-principal: #F5F5F5;
+  --rosa: #AFA5FC;
+  --branco: #ffffff;
+  --preto: #000000;
+  --cinza: #D9D9D9;
+  --cinza-escuro: #333333;
+  --cinza-medio: #BDBDBD;
+  --fonte-principal: "Playfair";
+  --fonte-secundaria: "Nunito";
+  --font-pequena: "Roboto";
+
+}
+
+body {
+  background-color: var(--cinza-escuro);
+  color: var(--preto);
+
+
+}
+
+h1 {
+  color: #fff;
+  background-color: #111;
+  border-radius: 1rem;
+  opacity: 0.9;
+  padding: 18px;
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  text-align: center;
+}
+
+
+
+[data-anime] {
+  opacity: 0;
+  transform: translate(0, 50px);
+  /* Mover a animação para cima em vez de para a direita ou esquerda */
+  transition: opacity 0.3s ease, transform 0.8s ease;
+  /* Melhorar as transições com a função "ease" */
+}
+
+[data-anime="right"] {
+  transform: translate(100px, 0);
+  /* Manter a mesma movimentação para a direita */
+}
+
+[data-anime="left"] {
+  transform: translate(-100px, 0);
+  /* Manter a mesma movimentação para a esquerda */
+
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate(0, 0);
+  /* Redefinir a posição para 0 */
+}
+
+
+.sobrecontainer,
+.projetoscontainer,
+.contatoscontainer {
+  height: 100vh !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+.sobrecontainer {
+  background-image: url(../img/seção\ 1.png);
+}
+
+.projetoscontainer {
+  background-image: url(../img/seção\ 3.png);
+}
+
+.contatoscontainer {
+  background-image: url(../img/seção\ 2.png);
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-100%);
+  transition: all 2s;
+
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+  transition: all 2s;
+}
+
+@media screen and (max-width: 450px) {
+
+  .sobrecontainer,
+  .projetoscontainer,
+  .contatoscontainer {
+    
+    background-attachment:scroll;
+  
+  }
+
+  h1 {
+    color: #fff;
+    background-color: #111;
+    border-radius: 1rem;
+    opacity: 0.9;
+    padding: 18px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 25%;
+    top: 45%;
+    text-align: center;
+  }
+
+}

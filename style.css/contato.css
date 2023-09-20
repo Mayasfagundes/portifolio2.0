@@ -1,0 +1,85 @@
+.contato {
+  align-items: center;
+  justify-content: center;
+
+}
+
+.contato__conteudo {
+  margin: 2rem;
+  justify-content: left;
+  text-align: left;
+
+}
+
+
+.contato__texto {
+  font-family: "Playfair";
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--branco);
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.contato__botoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.contato__itens {
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contato__itens-texto {
+  text-decoration: none;
+  color: var(--cinza-escuro);
+}
+
+.icon {
+  width: 60px;
+
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.contato__itens:nth-child(2){
+  transition-delay: 800ms;
+
+}
+
+.contato__conteudo :nth-child(3){
+  transition-delay: 1200ms;
+
+}
+
+.contato__conteudo :nth-child(4){
+  transition-delay: 1500ms;
+
+}
+@media screen and (max-width: 450px) {
+
+  .contato__texto {
+    font-size: 20px;
+
+  }
+
+  .icon {
+    width: 45px;
+  }
+
+  .contato__botoes {
+    margin-top: .5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
