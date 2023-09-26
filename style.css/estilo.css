@@ -116,13 +116,14 @@ h1 {
   transition: all 2s;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
 
   .sobrecontainer,
   .projetoscontainer,
   .contatoscontainer {
     
     background-attachment:scroll;
+    
   
   }
 

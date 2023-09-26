@@ -87,17 +87,21 @@
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
 
   .home {
     display: flex;
     flex-direction: column-reverse;
+    margin: auto;
+    padding: auto;
 
 
   }
 
   .home__conteudo {
     text-align: center;
+    align-items: center;
+    padding: 5rem 0;
   }
 
   .home__conteudo-titulo {
@@ -113,7 +117,9 @@
   }
 
   .home__foto{
-    margin: 2rem 5rem 1rem 5rem;
+    align-items: center;
+    text-align: center;
+    margin: 0;
   }
 
   .home__foto-principal {
@@ -123,7 +129,6 @@
 
   .icones__home-itens {
     display: flex;
-    flex-direction: column;
 
   }
 

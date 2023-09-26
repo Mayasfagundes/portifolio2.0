@@ -63,7 +63,7 @@
   transition-delay: 1500ms;
 
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
 
   .contato__texto {
     font-size: 20px;
