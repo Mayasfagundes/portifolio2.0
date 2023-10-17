@@ -90,6 +90,10 @@
     padding: 0;
   }
 
+  .skils__itens{
+    width: 120px;
+  }
+
   .skils__img {
     width: 3rem;
   }

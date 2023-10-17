@@ -59,7 +59,7 @@ h1 {
 }
 
 [data-anime="right"] {
-  transform: translate(100px, 0);
+  transform: translate(40px, 0);
   /* Manter a mesma movimentação para a direita */
 }
 
@@ -116,6 +116,11 @@ h1 {
   transition: all 2s;
 }
 
+body {
+  max-width: 100%;
+}
+
+
 @media screen and (max-width: 768px) {
 
   .sobrecontainer,
@@ -123,6 +128,7 @@ h1 {
   .contatoscontainer {
     
     background-attachment:scroll;
+    
     
   
   }
@@ -141,5 +147,6 @@ h1 {
     top: 45%;
     text-align: center;
   }
+
 
 }
