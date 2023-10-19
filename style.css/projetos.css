@@ -124,8 +124,8 @@
   }
 
   .projetos__info-conteudo {
-    width: 300px;
-    height: 150px;
+    width: 250px;
+    height: 160px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -135,6 +135,12 @@
     padding: 1rem;
   
   
+  }
+
+  .projetos__video__exibicao{
+    width: 250px;
+    height: 180px;
+
   }
   
 

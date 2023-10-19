@@ -33,15 +33,25 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: #212121;
+  border-radius: 1rem;
+  width: 6rem;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .contato__itens-texto {
   text-decoration: none;
-  color: var(--cinza-escuro);
+  color: var(--branco);
+  font-size: 18px;
+
 }
 
 .icon {
-  width: 60px;
+  width: 40px;
+  height: 40px;
+  color: var(--rosa);
+  margin-bottom: 0.5rem;
 
 }
 

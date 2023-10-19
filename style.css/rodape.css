@@ -1,6 +1,6 @@
 .rodape {
     margin-top: 2rem;
-    border-top: 1px solid var(--cinza-escuro);
+    border-top: 1px solid var( --cinza-medio);
     display: flex;
     justify-content: center;
 
@@ -8,6 +8,7 @@
 
 .rodape__texto {
     margin: 1rem;
+    color: var( --cinza-medio);
 }
 
 
@@ -23,3 +24,11 @@
 
 }
 
+@media screen and (max-width: 768px) {
+    .rodape {
+        margin-bottom: 4rem;
+        color: var( --cinza-medio);
+
+    }
+
+}
