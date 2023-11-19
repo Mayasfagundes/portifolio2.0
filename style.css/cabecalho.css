@@ -1,56 +1,65 @@
-.cabecalho{
-  background-color: var(--cinza-escuro);
+.cabecalho {
   opacity: .8;
-  font-family: var(--font-pequena) ;
-  font-size: 18px ;
+  font-family: var(--font-pequena);
+  font-size: 18px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: fixed;
-  padding: .8rem;
   width: 100%;
   z-index: 999;
-
-
-}
-
-.cabecalho__icones{
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
+  background-color: var(--cinza-escuro);
+
 }
 
-.cabecalho-link:hover{
+.cabecalho__monograma {
+  padding-left: 1rem;
+  margin-left: 5rem;
+  width: 90px;
+  max-width: 100%;
+}
+
+.cabecalho__icones {
+  justify-content: left;
+}
+
+.cabecalho-link:hover {
   background-color: var(--branco);
   color: #0A2A0A;
-  padding: .5rem;
+  margin: .5rem;
   border-radius: 5px;
   font-weight: bolder;
- 
+  justify-content: right;
+
+
+
 }
 
 
-.icones__cabecalho{
+.icones__cabecalho {
   display: flex;
+  padding: 0;
 
 }
 
 
-.cabecalho-link{
-  padding-left: 2rem;
+.cabecalho-link {
+  padding-right: 5rem;
   text-decoration: none;
   color: var(--cinza-medio);
   font-weight: 700 bold;
+  justify-content: right;
 }
 
-.cabecalho__icones-mobile{
+.cabecalho__icones-mobile {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
 
-  .cabecalho__icones{
+  .cabecalho__icones {
     display: none;
-  } 
+  }
 
   .cabecalho {
     font-family: var(--font-pequena);
@@ -58,35 +67,40 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 0; /* Posiciona o cabeçalho na parte inferior */
+    bottom: 0;
+    /* Posiciona o cabeçalho na parte inferior */
     width: 100%;
+    height: 60px;
     z-index: 999;
     background-color: var(--cinza-medio);
     opacity: 0.8;
-    
+
   }
 
-  .cabecalho__icones-mobile{
+  .cabecalho__icones-mobile {
     display: flex;
     flex-direction: row;
-   
+
   }
 
-  .icones__cabecalho-mobile{
+
+
+  .icones__cabecalho-mobile {
     display: flex;
     flex-direction: row;
-    
+
   }
 
-  .icone__mobile{
+  
+  .icone__mobile {
     width: 40px;
-    height: 35px;
-    margin: 0 1rem; 
+    height: 40px;
+    margin: 0 1rem;
   }
 
-  .icone__mobile:hover{
+  .icone__mobile:hover {
     padding: 0.3rem;
-   
+
   }
- 
+
 }
