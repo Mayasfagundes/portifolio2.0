@@ -27,10 +27,11 @@
 .cabecalho-link:hover {
   background-color: var(--branco);
   color: #0A2A0A;
-  margin: .5rem;
+  padding: 0.5rem;
   border-radius: 5px;
   font-weight: bolder;
   justify-content: right;
+
 
 
 
